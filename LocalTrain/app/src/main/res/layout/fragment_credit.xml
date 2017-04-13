@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:background="#cacaaa50"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" tools:context="com.example.mohebbadawy.localtrain.credit">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local Train application is an easy ,a new , and a
+         different way to interact with train tickets without
+          having troubles or wasting time."
+        android:textSize="14sp"
+           android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:text="Enjoy using our application!"
+        android:textSize="14sp"
+
+        android:textColor="#FFFFFF" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:text="
+        --------------------------------------------------------------
+        ©Designed and developed by: Moheb Badawy .
+        For more info : Mobile : 01286609904
+                        Email  : hepo326@gmail.com
+         "
+        android:textSize="14sp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/bkBtn"
+        android:layout_below="@+id/textView3"
+        android:layout_gravity="right" />
+
+
+</LinearLayout>

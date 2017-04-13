@@ -1,0 +1,271 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mohebbadawy.localtrain.viewTicketFragment"
+    android:layout_margin="10dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket Details"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket ID :-"
+            android:id="@+id/textView3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="7"
+            android:id="@+id/searchKey"
+            android:hint="e.g:10014 "
+            android:numeric="integer"
+            android:layout_marginLeft="70dp"
+            android:textColor="#000000"
+            android:textAlignment="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                android:id="@+id/search_Btn_TicketView"
+
+                />
+
+        </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/ticketdetails_table"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Train ID      :-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/trainID_Txt_TicketView"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:layout_span="0" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Train Type  :-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/trainType_Txt_TicketView"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:layout_span="0" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Arrival         :-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrival_Txt_TicketView"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:layout_span="0" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination:-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/destination_Txt_TicketView"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:ems="7"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:layout_column="1"
+                android:layout_span="0" />
+
+
+        </TableRow>
+
+
+
+
+
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp">-->
+
+
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Time            :-"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+                <!--android:layout_column="0"-->
+
+
+                <!--/>-->
+
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/time_Txt_TicketView"-->
+                <!--android:layout_column="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:enabled="false"-->
+                <!--android:textAlignment="center"-->
+                <!--android:background="@drawable/edit_text_style"-->
+                <!--android:layout_span="0" />-->
+
+        <!--</TableRow>-->
+
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp">-->
+
+
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Cost            :-"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+                <!--android:layout_column="0"-->
+
+
+                <!--/>-->
+
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ems="7"-->
+                <!--android:id="@+id/cost_Txt_TicketView"-->
+                <!--android:layout_column="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:enabled="false"-->
+                <!--android:textAlignment="center"-->
+                <!--android:background="@drawable/edit_text_style"-->
+                <!--android:layout_span="0" />-->
+
+        <!--</TableRow>-->
+
+
+    </TableLayout>
+
+
+
+</LinearLayout>

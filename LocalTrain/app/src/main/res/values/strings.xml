@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Local Train</string>
+
+    <array name="trainClass" >
+
+        <item>--Select--</item>
+        <item>Fast</item>
+        <item>Sleep</item>
+        <item>Air conditioned</item>
+
+    </array>
+
+    <array name="options" >
+
+        <item>--Select--</item>
+        <item>Details</item>
+        <item>Book ticket</item>
+        <item>View ticket</item>
+        <item>Add Balance</item>
+        <item>Logout</item>
+
+
+    </array>
+
+    <array name="Stations" >
+
+        <item>--Select--</item>
+        <item>Cairo</item>
+        <item>Giza</item>
+        <item>Bani Swif</item>
+        <item>Minyaa</item>
+        <item>Assuit</item>
+        <item>Sohag</item>
+        <item>Qena</item>
+        <item>Loxour</item>
+
+    </array>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

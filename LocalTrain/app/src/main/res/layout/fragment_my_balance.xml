@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohebbadawy.localtrain.myBalanceFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Balance"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textStyle="bold"/>
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myBalance_table"
+        android:layout_margin="10dp"
+        >
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="User ID  :-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userID_myBalance"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:layout_column="1"
+                 />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Balance :-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/balance_myBalance"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Card No:-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/cardNum_myBalance"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:hint="Card number"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                />
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="CVV No :-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cvv_myBalance"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:hint="Password"
+                android:background="@drawable/edit_text_style"
+                />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Amount :-"
+                android:textSize="20sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_column="0"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:id="@+id/amount_myBalance"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_style"
+                />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumbit"
+        android:id="@+id/addBalance_btn_myBalance"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+        android:textStyle="bold"/>
+
+
+
+
+</LinearLayout>
